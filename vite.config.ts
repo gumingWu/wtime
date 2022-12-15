@@ -4,6 +4,11 @@ import Unimport from 'unimport/unplugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': '/src'
+    }
+  },
   plugins: [
     vue(),
     Unimport.vite({
