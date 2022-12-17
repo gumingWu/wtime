@@ -12,6 +12,13 @@ export default defineConfig({
   plugins: [
     vue(),
     Unimport.vite({
+      imports: [
+        {
+          from: 'dayjs',
+          name: 'default',
+          as: 'dayjs'
+        }
+      ],
       presets: [
         'vue',
         '@vueuse/core'
